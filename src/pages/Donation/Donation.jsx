@@ -17,7 +17,6 @@ const Donation = () => {
     } else {
       setShow(donations.length);
     }
-    // setShow(donations.length);
     console.log(showAllBtn);
   };
 

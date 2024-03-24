@@ -9,11 +9,9 @@ import {
 const DonationCard = ({ donation }) => {
 
   const {
-    id,
     title,
     category,
     image,
-    description,
     price,
     cardBg,
     textColor,
