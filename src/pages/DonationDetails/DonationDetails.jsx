@@ -9,6 +9,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { saveDonation } from "../../utils/localStorage";
+import CustomSpinner from "../../components/CustomSpinner/CustomSpinner";
 
 const DonationDetails = () => {
   const { id } = useParams();
@@ -20,6 +21,7 @@ const DonationDetails = () => {
    saveDonation(idInt);
 
   }
+
 
   useEffect(() => {
     if (data) {
@@ -35,6 +37,12 @@ const DonationDetails = () => {
     price,
     textColor,
   } = singleData || {};
+
+
+      if (loading) {
+        return <CustomSpinner />;
+      }
+
 
   return (
     <Card className="mt-12 max-w-7xl mx-auto shadow-none rounded-md overflow-hidden px-10 lg:px-5 object-cover">
