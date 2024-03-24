@@ -14,15 +14,13 @@ const CardDefault = ({ item }) => {
     title,
     category,
     image,
-    description,
-    price,
     cardBg,
     textColor,
     categoryBg,
   } = item || {};
- 
+
   return (
-    <Link to={`/donation-details/${id}`}>
+    <Link to={`/donation-details/${id}`} className="mx-auto">
       <Card
         style={{ backgroundColor: cardBg, color: textColor }}
         className="mt-6 overflow-hidden  cursor-pointer rounded-t-lg rounded-b-none"
