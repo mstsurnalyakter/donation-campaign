@@ -1,10 +1,9 @@
-import { Button } from "@material-tailwind/react";
-
+import Banner from "../../components/Banner/Banner";
 
 const Home = () => {
   return (
     <div>
-      <Button>Button</Button>
+      <Banner/>
     </div>
   );
 }
