@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getStoredDonation = () => {
   const getDonation = localStorage.getItem("donation");
   if (getDonation) {
@@ -11,11 +13,11 @@ const saveDonation = id =>{
 
     const isExist = getDonation.find(donation => donation === id);
     if (isExist) {
-       alert("Already Donate")
+      toast.warn("Already Donate!");
     }else{
         getDonation.push(id);
         localStorage.setItem("donation",JSON.stringify(getDonation));
-         alert("Donate added successfully!");
+         toast.success("Donation Added Successfully!");
     }
 }
 

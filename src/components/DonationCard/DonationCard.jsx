@@ -7,7 +7,7 @@ import {
 } from "@material-tailwind/react";
 
 const DonationCard = ({ donation }) => {
-    console.log(donation);
+
   const {
     id,
     title,
