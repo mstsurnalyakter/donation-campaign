@@ -23,6 +23,7 @@ const DonationDetails = () => {
   }
 
 
+
   useEffect(() => {
     if (data) {
       const singleData = data.find((item) => item.id === idInt);
