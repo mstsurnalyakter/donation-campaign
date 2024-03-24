@@ -6,6 +6,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 function NavList() {
   return (
@@ -16,12 +17,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <NavLink
+          to={"/"}
           className="flex items-center hover:text-blue-500 transition-colors text-xl"
         >
           Home
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -29,12 +30,12 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <NavLink
+          to={"/donation"}
           className="flex items-center hover:text-blue-500 transition-colors text-xl"
         >
           Donation
-        </a>
+        </NavLink>
       </Typography>
       <Typography
         as="li"
@@ -42,26 +43,13 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a
-          href="#"
+        <NavLink
+          to={""}
           className="flex items-center hover:text-blue-500 transition-colors text-xl"
         >
-         Statistics
-        </a>
+          Statistics
+        </NavLink>
       </Typography>
-      {/* <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
-        <a
-          href="#"
-          className="flex items-center hover:text-blue-500 transition-colors"
-        >
-          Docs
-        </a>
-      </Typography> */}
     </ul>
   );
 }
@@ -83,14 +71,6 @@ const NavBar = () => {
   return (
     <Navbar className="mx-auto max-w-7xl  py-3 shadow-none">
       <div className="flex items-center justify-between text-blue-gray-900">
-        {/* <Typography
-          as="a"
-          href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5"
-        >
-          Material Tailwind
-        </Typography> */}
         <div>
           <img src="/images/logo.png" alt="" />
         </div>
