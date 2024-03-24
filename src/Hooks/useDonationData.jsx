@@ -26,4 +26,4 @@ const useDonationData = () => {
   return { data, loading };
 }
 
-export default useDonationData
+export default useDonationData;
