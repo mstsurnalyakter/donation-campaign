@@ -22,7 +22,7 @@ const Donation = () => {
 
   if (donations.length === 0) {
     return (
-      <p className="text-red-500 min-h-[calc(100vh-98px)] flex items-center justify-center text-5xl font-bold">
+      <p className="text-red-500 h-[400px] flex items-center justify-center text-5xl font-bold">
         You have not made any donations yet.
       </p>
     );
